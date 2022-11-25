@@ -49,7 +49,7 @@ Wenn du zu den Lösungen beitragen möchtest, hast du zwei Optionen: **Selbst mi
 
 1. Forke dieses Repository in deinen GitHub-Account (oben rechts auf "Fork" klicken)
 2. Klone das Repository bei dir lokal
-3. Füge deine Lösungen hinzu und bearbeite sie - **beachte dabei die [Ordnerstruktur](#TODO)**
+3. Füge deine Lösungen hinzu und bearbeite sie - **beachte dabei die [Ordnerstruktur](#repository-aufbau--repository-structure)**
 4. Bearbeite **nicht** die README! Die Tabelle wird von uns ergänzt.
 5. Mache eine Pull Request wann immer du
    - neue funktionierende Lösungen hast
