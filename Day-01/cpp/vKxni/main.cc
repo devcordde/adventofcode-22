@@ -27,7 +27,7 @@ void part_one()
 
 void part_two()
 {
-    int act = 0, total = 0, max = 0;
+    int act = 0, total = 0;
     std::list<int> l;
     std::ifstream input("input.txt");
     std::string line;
