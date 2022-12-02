@@ -1,7 +1,6 @@
 package unbekannt
 
 import java.io.File
-import kotlin.math.hypot
 
 
 fun main() {
