@@ -34,9 +34,8 @@ fun getResultScore2(you: String): Int {
 
 fun getSelectionScore2(it: Pair<String, String>): Int {
     val opponent = it.first
-    val you = it.second
 
-    return when(you){
+    return when(it.second){
         "X"  -> when(opponent){
             "A" -> 3
             "B" -> 1
@@ -67,32 +66,15 @@ fun getSelectionScore(second: String): Int {
         else -> 0
     }
 }
-/*
- * Values
- *  YOU
- *  Rock x 1
- *  Paper Y 2
- *  Sissors Z 3
- *
- *  Oponent
- *  Rock A
- *  Paper B
- *  Sissors C
- *
- *  Outcome
- *  Loose 0
- *  Draw 3
- *  Win 6
- */
+
 fun getResultScore(it: Pair<String, String>): Int {
-    val opponent = it.first
     val you = it.second
 
-    return when(opponent){
-        "A"  -> when(you) { // Rock
-                "X" -> 3 // Rock
-                "Y" -> 6 // Paper
-                "Z" -> 0 // Sisors
+    return when(it.first){
+        "A"  -> when(you) {
+                "X" -> 3
+                "Y" -> 6
+                "Z" -> 0
                 else -> 0
             }
         "B" -> when (you) {
