@@ -13,7 +13,7 @@ Here is a list of all programming languages used by the contributors and the day
 | Day/Lang                              | Java | Python | Kotlin | Ruby | Elixir | JavaScript    | Perl    | C    | Clojure    | Haskell    | Nim    | C#    | Scala    | C++    | Go    | Groovy   | Rust   |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | 01 - Calorie Counting                 | ✅     | ✅     | ✅    | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      |
-| 01 - Rock Paper Scissors                 | ✅     | ✅     | ✅    | ❌      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ✅      | ❌      | ❌      | ❌      | ✅      | ✅      | ❌      |
+| 02 - Rock Paper Scissors                 | ✅     | ✅     | ✅    | ❌      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ✅      | ❌      | ❌      | ❌      | ✅      | ✅      | ❌      |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
