@@ -1,91 +1,67 @@
 use strict;
 use warnings;
-use Data::Dumper;
+use constant kLettersInAlphabet => 26;
+use constant kNumberItemTypes => kLettersInAlphabet * 2;
 
-sub part1 {
-    my @rucksacks = @{$_[0]};
-    my $total = 0;
+my @input_lines;
+open(my $f, '<', 'input.txt');
+if (defined $f) {
+    while (my $line = <$f>) {
+        chomp $line;
+        push @input_lines, $line;
+    }
+}
+else {
+    print("file dead");
+    exit(-1);
+}
 
-    for my $line (@rucksacks) {
-        my @first = split(//, substr($line, 0, length($line) / 2));
-        my @second = split(//, substr($line, length($line) / 2, length($line)));
+my $priority_sum = 0;
 
-        for my $letter (@second) {
-            if (grep {$_ eq $letter} @first) {
-                my $priority = ord($letter);
+for my $rucksack (@input_lines) {
+    my @seen = (0) x kNumberItemTypes;
 
-                if (97 <= $priority && $priority <= 122) {
-                    $priority = $priority - 96;
-                } else {
-                    $priority = $priority - 38;
-                }
+    my $dividing_line = length($rucksack) / 2;
+    for (my $i = 0; $i < $dividing_line; ++$i) {
+        my $pos = substr($rucksack, $i, 1) ge 'a' ? ord(substr($rucksack, $i, 1)) - ord('a') : ord(substr($rucksack, $i, 1)) - ord('A') + kLettersInAlphabet;
+        $seen[$pos] = 1;
+    }
 
-                $total += $priority;
+    for (my $i = $dividing_line; $i < length($rucksack); ++$i) {
+        my $pos = substr($rucksack, $i, 1) ge 'a' ? ord(substr($rucksack, $i, 1)) - ord('a') : ord(substr($rucksack, $i, 1)) - ord('A') + kLettersInAlphabet;
+        if ($seen[$pos]) {
+            $priority_sum += $pos + 1;
+            last;
+        }
+    }
+}
 
+print("Part 1: $priority_sum
+
+");
+
+
+$priority_sum = 0;
+for (my $rucksack_i = 0; $rucksack_i < @input_lines;)
+{
+    my @group_bits = (0) x kNumberItemTypes;
+    for (my $i = 0; $i < 3; ++$i, ++$rucksack_i)
+    {
+        for my $c (split //, $input_lines[$rucksack_i])
+        {
+            my $pos = ord($c) >= ord('a') ?
+                      ord($c) - ord('a') :
+                      ord($c) - ord('A') + kLettersInAlphabet;
+            $group_bits[$pos] |= 1 << $i;
+            if ($group_bits[$pos] == 0b0111)
+            {
+                $priority_sum += $pos + 1;
                 last;
             }
         }
     }
-
-    return $total;
 }
 
-sub part2 {
-    open(my $f, "<", "input.txt") or die "Can't open input.txt: $!";
-    my @Lines = <$f>;
-    my $bestSoFar = 0;
-    my @thingsToCount;
-    my $counter = 1;
-    my $line1 = "";
-    my $line2 = "";
-    my $line3 = "";
-    foreach my $line (@Lines) {
-        $line =~ s/\s+//g;
-        if ($counter % 3 == 1) {
-            $line1 = $line;
-        } elsif ($counter % 3 == 2) {
-            $line2 = $line;
-        } elsif ($counter % 3 == 0) {
-            $line3 = $line;
-            my %line1 = map { $_ => 1 } split(//, $line1);
-            my %line2 = map { $_ => 1 } split(//, $line2);
-            my %line3 = map { $_ => 1 } split(//, $line3);
-            my @intersection = grep { $line1{$_} && $line2{$_} && $line3{$_} } keys %line1;
-            $line1 = "";
-            $line2 = "";
-            $line3 = "";
-            push(@thingsToCount, $intersection[0]);
-        }
-        $counter += 1;
-    }
-
-    foreach my $char (@thingsToCount) {
-        my $temp = ord($char);
-        if ($temp > 96) {
-            $temp -= 96;
-        } else {
-            $temp -= 38;
-        }
-        $bestSoFar += $temp;
-        $temp = 0;
-    }
-
-   return $bestSoFar;
-}
-
-sub main {
-    open(my $f, "<", "input.txt") or die "Can't open file: $!";
-    my @rucksacks = <$f>;
-    close($f);
-
-    chomp(@rucksacks);
-
-    print "Part 1: ", part1(\@rucksacks), "
+print "Part 2: $priority_sum
 
 ";
-    print "Part 2: ", part2(\@rucksacks), "
-
-";
-}
-
-main();
