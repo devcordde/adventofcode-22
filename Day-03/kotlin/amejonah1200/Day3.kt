@@ -8,4 +8,4 @@ fun main() {
 }
 
 private fun priorityOfIntersect(vararg iterables: Iterable<Char>) =
-  iterables.reduce(Iterable<Char>::intersect).first().let { if (it in 'a'..'z') it.code - 96 else it.code - 38 }
+  iterables.reduce(Iterable<Char>::intersect).first().let { if (it in 'a'..'z') it - 'a' else it - 'A' + 26 } + 1
