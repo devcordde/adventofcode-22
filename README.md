@@ -14,6 +14,8 @@ Here is a list of all programming languages used by the contributors and the day
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | 01 - Calorie Counting                 | ✅     | ✅     | ✅    | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      |
 | 02 - Rock Paper Scissors                 | ✅     | ✅     | ✅    | ✅      | ✅      | ✅      | ✅      | ✅      | ❌      | ✅      | ✅      | ✅      | ❌      | ✅      | ✅      | ✅      | ✅      | ✅      |
+| 03 - Rucksack Reorganization                 | ✅     | ✅     | ✅    | ✅      | ✅      | ✅      | ✅      | ✅      | ❌      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌      | ✅      |
+
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
