@@ -49,6 +49,7 @@ int main()
     }
 
     std::cout << "Part 1: " << priority_sum << std::endl;
+
     priority_sum = 0;
     for (unsigned long rucksack_i = 0; rucksack_i < input_lines.size();)
     {
@@ -69,6 +70,5 @@ int main()
     }
 
     std::cout << "Part 2: " << priority_sum << std::endl;
-
     return 0;
 }
