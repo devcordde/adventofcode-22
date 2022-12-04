@@ -10,10 +10,12 @@ Hier ist eine Liste mit allen von Beitragenden verwendeten Programmiersprachen u
 
 Here is a list of all programming languages used by the contributors and the days that were solved with them:
 
-| Day/Lang                              | Java | Python | Kotlin | Ruby | Elixir | JavaScript    | Perl    | C    | Clojure    | Haskell    | Nim    | C#    | Scala    | C++    | Go    | Groovy   | Rust   | BQN   |
-| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| 01 - Calorie Counting                 | ✅     | ✅     | ✅    | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      |
-| 02 - Rock Paper Scissors                 | ✅     | ✅     | ✅    | ✅      | ✅      | ✅      | ✅      | ✅      | ❌      | ✅      | ✅      | ✅      | ❌      | ✅      | ✅      | ✅      | ✅      | ❌      |
+| Day/Lang                              | Java | Python | Kotlin | Ruby | Elixir | JavaScript    | Perl    | C    | Clojure    | Haskell    | Nim    | C#    | Scala    | C++    | Go    | Groovy   | Rust   | BQN   | T-SQL   |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| 01 - Calorie Counting                 | ✅     | ✅     | ✅    | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      |
+| 02 - Rock Paper Scissors                 | ✅     | ✅     | ✅    | ✅      | ✅      | ✅      | ✅      | ✅      | ❌      | ✅      | ✅      | ✅      | ❌      | ✅      | ✅      | ✅      | ✅      | ✅      | ❌      |
+| 03 - Rucksack Reorganization                 | ✅     | ✅     | ✅    | ✅      | ✅      | ✅      | ✅      | ✅      | ❌      | ✅      | ✅      | ❌      | ❌      | ✅      | ❌      | ✅      | ❌      | ✅      | ❌      |
+
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
