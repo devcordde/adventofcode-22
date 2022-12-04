@@ -2,39 +2,24 @@
 #include <stdlib.h>
 #include <string.h>
 
-int * sections(char line[127]) {
-    char p1[127],p2[127],*temp;
-    static int results[4];
-
-    char *ptr = strtok(line, ",");
-    strcpy(p1,ptr);
-    ptr = strtok(NULL, ",");
-    strcpy(p2,ptr);
-
-    ptr = strtok(p1,"-");
-    results[0] = strtol(ptr,&temp,10);
-    ptr = strtok(NULL,"-");
-    results[1] = strtol(ptr,&temp,10);
-
-    ptr = strtok(p2,"-");
-    results[2] = strtol(ptr,&temp,10);
-    ptr = strtok(NULL,"-");
-    results[3] = strtol(ptr,&temp,10);
-
-    return results;
-}
-
 int main() {
     char filename[] = "Input_Day04.txt";
     FILE *input = fopen(filename, "r");
     int fo = 0,po = 0;
 
     if (input != NULL) {
-        int *s;
-        char line[127];
+        char line[128];
         while(fgets (line, sizeof(line), input) != NULL) {
-            int a1, a2, b1, b2;
-            s = sections(line);
+            char p1[64],p2[64],*temp;
+            int s[4];
+            strcpy(p1,strtok(line, ","));
+            strcpy(p2,strtok(NULL, ","));
+
+            s[0] = strtol(strtok(p1,"-"),&temp,10);
+            s[1] = strtol(strtok(NULL,"-"),&temp,10);
+            s[2] = strtol(strtok(p2,"-"),&temp,10);
+            s[3] = strtol(strtok(NULL,"-"),&temp,10);
+            
             if( (s[0] <= s[2] && s[1] >= s[3]) || (s[2] <= s[0] && s[3] >= s[1]) ){
                 fo++;
             }
@@ -46,3 +31,4 @@ int main() {
     fprintf(stdout,"%d %d\n",fo, po);
     return 0;
 }
+
