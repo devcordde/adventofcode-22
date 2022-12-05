@@ -2,15 +2,6 @@ import java.io.File
 
 fun main() {
     val input = File("input-day05.txt").readLines()
-//        listOf("    [D]    ",
-//            "[N] [C]    ",
-//            "[Z] [M] [P]",
-//            " 1   2   3 ",
-//            "",
-//            "move 1 from 2 to 1",
-//            "move 3 from 1 to 3",
-//            "move 2 from 2 to 1",
-//            "move 1 from 1 to 2")
     val cargoPart1 = mutableMapOf<Int, MutableList<Char>>()
     val cargoPart2 = mutableMapOf<Int, MutableList<Char>>()
     val instructions = mutableListOf<Instruction>()
