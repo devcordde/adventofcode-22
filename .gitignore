@@ -2,4 +2,7 @@
 out/
 build/
 __pycache__
+.clj-kondo/
+.nrepl-port
+.lsp/
 *.txt
