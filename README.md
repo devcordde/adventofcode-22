@@ -10,13 +10,13 @@ Hier ist eine Liste mit allen von Beitragenden verwendeten Programmiersprachen u
 
 Here is a list of all programming languages used by the contributors and the days that were solved with them:
 
-| Day/Lang                              | Java | Python | Kotlin | Ruby | Elixir | JavaScript    | Perl    | C    | Clojure    | Haskell    | Nim    | C#    | Scala    | C++    | Go    | Groovy   | Rust   | BQN   | T-SQL   | TypeScript   |
-| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| 01 - Calorie Counting                 | ✅     | ✅     | ✅    | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      |
-| 02 - Rock Paper Scissors                 | ✅     | ✅     | ✅    | ✅      | ✅      | ✅      | ✅      | ✅      | ❌      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ❌      | ✅      |
-| 03 - Rucksack Reorganization                 | ✅     | ✅     | ✅    | ✅      | ✅      | ✅      | ✅      | ✅      | ❌      | ✅      | ✅      | ❌      | ❌      | ✅      | ❌      | ✅      | ✅      | ✅      | ❌      | ✅      |
-| 04 - Camp Cleanup                 | ✅     | ✅     | ✅    | ✅      | ✅      | ❌      | ✅      | ✅      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ✅      | ❌      | ✅      |
-
+| Day/Lang                     | Java | Python | Kotlin | Ruby | Elixir | JavaScript | Perl | C  | Clojure | Haskell | Nim | C# | Scala | C++ | Go | Groovy | Rust | BQN | T-SQL | TypeScript |
+|------------------------------|------|--------|--------|------|--------|------------|------|----|---------|---------|-----|----|-------|-----|----|--------|------|-----|-------|------------|
+| 01 - Calorie Counting        | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ✅      | ✅      | ✅  | ✅ | ✅    | ✅  | ✅ | ✅     | ✅   | ✅  | ✅    | ✅         |
+| 02 - Rock Paper Scissors     | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ❌      | ✅      | ✅  | ✅ | ✅    | ✅  | ✅ | ✅     | ✅   | ✅  | ❌    | ✅         |
+| 03 - Rucksack Reorganization | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ❌      | ✅      | ✅  | ❌ | ✅    | ✅  | ❌ | ✅     | ✅   | ✅  | ❌    | ✅         |
+| 04 - Camp Cleanup            | ✅   | ✅     | ✅     | ✅   | ✅     | ❌         | ✅   | ✅ | ✅      | ✅      | ✅  | ❌ | ❌    | ❌  | ❌ | ❌     | ✅   | ✅  | ❌    | ✅         |
+| 05 - Supply Stacks           | ✅   | ✅     | ✅     | ✅   | ❌     | ❌         | ✅   | ✅ | ✅      | ❌      | ✅  | ❌ | ❌    | ✅  | ❌ | ✅     | ❌   | ❌  | ❌    | ❌         |
 
 
 ❌   = Keine Lösung / No solution,
