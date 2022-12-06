@@ -15,7 +15,7 @@ Here is a list of all programming languages used by the contributors and the day
 | 01 - Calorie Counting        | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ✅      | ✅      | ✅  | ✅ | ✅    | ✅  | ✅ | ✅     | ✅   | ✅  | ✅    | ✅         |
 | 02 - Rock Paper Scissors     | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ❌      | ✅      | ✅  | ✅ | ✅    | ✅  | ✅ | ✅     | ✅   | ✅  | ❌    | ✅         |
 | 03 - Rucksack Reorganization | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ❌      | ✅      | ✅  | ❌ | ✅    | ✅  | ❌ | ✅     | ✅   | ✅  | ❌    | ✅         |
-| 04 - Camp Cleanup            | ✅   | ✅     | ✅     | ✅   | ✅     | ❌         | ✅   | ✅ | ✅      | ✅      | ✅  | ❌ | ❌    | ❌  | ❌ | ❌     | ✅   | ✅  | ❌    | ✅         |
+| 04 - Camp Cleanup            | ✅   | ✅     | ✅     | ✅   | ✅     | ❌         | ✅   | ✅ | ✅      | ✅      | ✅  | ❌ | ❌    | ✅  | ❌ | ✅     | ✅   | ✅  | ❌    | ✅         |
 | 05 - Supply Stacks           | ✅   | ✅     | ✅     | ✅   | ❌     | ❌         | ✅   | ✅ | ✅      | ❌      | ✅  | ❌ | ❌    | ✅  | ❌ | ✅     | ❌   | ❌  | ❌    | ❌         |
 
 
