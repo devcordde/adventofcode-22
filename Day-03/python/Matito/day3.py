@@ -13,11 +13,9 @@ for i in range(len(f)):
     if len(group) == 3:
         longeststr = max(group, key=len)
         for i5 in range(len(longeststr)):
-            if longeststr[i5] in group[0]: #sehr unclean aber mit if x in a and b and c gings nicht
-                if longeststr[i5] in group[1]:
-                    if longeststr[i5] in group[2]:
-                        badges.append(longeststr[i5])
-                        break
+            if longeststr[i5] in group[0] and longeststr[i5] in group[1] and longeststr[i5] in group[2]:
+                badges.append(longeststr[i5])
+                break
         group = []
 
     compartment = len(f[i]) / 2
