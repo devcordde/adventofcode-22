@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-        input, _ := ioutil.ReadFile("Day03/input.txt")
+        inputBytes, _ := ioutil.ReadFile("input.txt")
+	input := string(inputBytes)
 	rucksacks := strings.Split(input, "\n")
 	totalPriority := 0
 	for _, rucksack := range rucksacks {
