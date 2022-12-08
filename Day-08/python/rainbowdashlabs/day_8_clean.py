@@ -6,7 +6,7 @@ rows = len(trees)
 all_trees = [e for sub in [[(row, col) for col in range(cols)] for row in range(rows)] for e in sub]
 left_trees = lambda row, col: trees[row][:col][::-1]
 right_trees = lambda row, col: trees[row][col + 1:]
-bottom_trees = lambda row, col: [trees[rows - 1 - row][col] for row in range(rows - row - 1)][::-1]
+bottom_trees = lambda row, col: [trees[row][col] for row in range(row + 1, rows)]
 top_trees = lambda row, col: [tree(row, col) for row in range(row)][::-1]
 is_bound = lambda row, col: min(row, col) == 0 or col == cols - 1 or row == rows - 1
 
