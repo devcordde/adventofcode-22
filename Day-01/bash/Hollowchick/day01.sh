@@ -1,6 +1,5 @@
 #!/bin/bash
 
-file="input"
 calories=0
 countarr=0
 array=()
