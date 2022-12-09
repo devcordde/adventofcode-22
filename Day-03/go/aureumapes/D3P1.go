@@ -28,11 +28,11 @@ func main() {
 	print(totalPriority)
 }
 
-func PriorityCalc(item rune) int {
+func priorityCalc(item rune) int {
 	if unicode.IsLower(item) {
 		priority := int(item) - 96
 		return priority
+	} else {
+		return int(item) - 38
 	}
-	priority := int(item) - 38
-	return priority
 }
