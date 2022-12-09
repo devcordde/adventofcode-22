@@ -1,6 +1,7 @@
 import copy
 
 moves = [line.split(' ') for line in open('input.txt').read().splitlines()]
+sign = lambda num: -1 if num < 0 else 1 if num > 0 else 0
 
 class Coordinate:
     def __init__(self, x, y):
@@ -8,11 +9,7 @@ class Coordinate:
         self.y = y
 
     def get_snap_coordinate(self, other):
-        if abs(self.x - other.x) < 2 and abs(self.y - other.y) < 2: return self
-
-        if self.x == other.x: return Coordinate(self.x, other.y - 1 if self.y < other.y else other.y + 1)
-        elif self.y == other.y: return Coordinate(other.x - 1 if self.x < other.x else other.x + 1, self.y)
-        else: return Coordinate(self.x + 1 if self.x < other.x else self.x - 1, self.y + 1 if self.y < other.y else self.y - 1)
+        return self + Coordinate(sign(other.x - self.x), sign(other.y - self.y)) if abs(self.x - other.x) > 1 or abs(self.y - other.y) > 1 else self
 
     def __add__(self, other):
         return Coordinate(self.x + other.x, self.y + other.y)
@@ -22,7 +19,7 @@ class Coordinate:
 
 def get_unique_tail_visits(length):
     pieces = [Coordinate(0, 0) for _ in range(length)]
-    visited = []
+    visited = set()
     for dir, amount in moves:
         for move in range(int(amount)):
             c = Coordinate(1 if dir == 'R' else -1 if dir == 'L' else 0, 1 if dir == 'U' else -1 if dir == 'D' else 0)
@@ -32,8 +29,9 @@ def get_unique_tail_visits(length):
                     continue
                 previous = copy.copy(pieces[i - 1])
                 pieces[i] = pieces[i].get_snap_coordinate(previous)
-                if i == len(pieces) - 1: visited.append(copy.copy(pieces[i]))
-    return set([str(c) for c in visited])
+                if i == len(pieces) - 1:
+                    visited.add(str(copy.copy(pieces[i])))
+    return visited
 
 # Task 1
 print(len(get_unique_tail_visits(2)))
