@@ -1,29 +1,26 @@
 from dataclasses import dataclass
 
+from imath import sign as s
+
 
 @dataclass(unsafe_hash=True)
 class Point:
     x: int
     y: int
 
-    def __add__(self, other: "Point"):
+    def __add__(self, other: "Point") -> "Point":
         self.x += other.x
         self.y += other.y
         return self
 
-    def follow(self, head: "Point"):
-        if abs(self.x - head.x) <= 1 and abs(self.y - head.y) <= 1:
-            return
-        elif self.y == head.y or self.x == head.x:
-            self + Point(0 if self.x == head.x else 1 if self.x < head.x else -1, 0 if self.y == head.y else 1 if self.y < head.y else -1)
-        else:
-            self + Point(1 if self.x < head.x else -1, 1 if self.y < head.y else -1)
+    def follow(self, h: "Point"):
+        self if abs(self.x - h.x) <= 1 and abs(self.y - h.y) <= 1 else self + Point(s(h.x - self.x), s(h.y - self.y))
 
 
 class Rope:
     def __init__(self, length: int):
         self.knots: list[Point] = [Point(0, 0) for e in range(length)]
-        self.visited = {Point(0, 0)}
+        self.visited: set[Point] = {Point(0, 0)}
 
     def batch_move(self, moves: list[(str, int)]) -> int:
         [[self.move(move) for step in range(move[1])] for move in moves]

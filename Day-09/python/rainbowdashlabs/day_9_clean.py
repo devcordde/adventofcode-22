@@ -1,24 +1,23 @@
 from dataclasses import dataclass
 
+from imath import sign
+
 
 @dataclass(unsafe_hash=True)
 class Point:
     x: int
     y: int
 
+    def __add__(self, other: "Point") -> "Point":
+        self.x += other.x
+        self.y += other.y
+        return self
+
     def adjacent(self, point: "Point") -> bool:
         return abs(self.x - point.x) <= 1 and abs(self.y - point.y) <= 1
 
     def follow(self, head: "Point"):
-        if self.adjacent(head):
-            pass
-        elif self.y == head.y:
-            self.x = head.x - 1 if self.x < head.x else head.x + 1
-        elif self.x == head.x:
-            self.y = head.y - 1 if self.y < head.y else head.y + 1
-        else:
-            self.x += 1 if self.x < head.x else -1
-            self.y += 1 if self.y < head.y else -1
+        self if self.adjacent(head) else self + Point(sign(head.x - self.x), sign(head.y - self.y))
 
 
 @dataclass
