@@ -1,12 +1,13 @@
 package main
 
 import (
+	"io/ioutil"
 	"strings"
 	"unicode"
 )
 
 func main() {
-        inputBytes, _ := ioutil.ReadFile("input.txt")
+	inputBytes, _ := ioutil.ReadFile("input.txt")
 	input := string(inputBytes)
 	rucksacks := strings.Split(input, "\n")
 	totalPriority := 0
@@ -19,7 +20,7 @@ func main() {
 			item := string(itemRune)
 			isDouble := strings.ContainsRune(compartment2, itemRune)
 			if isDouble && !strings.ContainsAny(isChecked, item) {
-				priority := PriorityCalc(itemRune)
+				priority := priorityCalc(itemRune)
 				totalPriority += priority
 				isChecked = isChecked + item
 			}
