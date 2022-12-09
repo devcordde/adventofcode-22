@@ -1,13 +1,13 @@
 package main
 
 import (
-	"io/ioutil"
+	"os"
 	"strings"
 	"unicode"
 )
 
 func main() {
-	inputBytes, _ := ioutil.ReadFile("input.txt")
+	inputBytes, _ := os.ReadFile("Day-03/go/aureumapes/input.txt")
 	input := string(inputBytes)
 	rucksacks := strings.Split(input, "\n")
 	totalPriority := 0
