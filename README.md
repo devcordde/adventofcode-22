@@ -10,16 +10,18 @@ Hier ist eine Liste mit allen von Beitragenden verwendeten Programmiersprachen u
 
 Here is a list of all programming languages used by the contributors and the days that were solved with them:
 
-| Day/Lang                     | Java | Python | Kotlin | Ruby | Elixir | JavaScript | Perl | C  | Clojure | Haskell | Nim | C# | Scala | C++ | Go | Groovy | Rust | BQN | T-SQL | TypeScript |
-|------------------------------|------|--------|--------|------|--------|------------|------|----|---------|---------|-----|----|-------|-----|----|--------|------|-----|-------|------------|
-| 01 - Calorie Counting        | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ✅      | ✅      | ✅  | ✅ | ✅    | ✅  | ✅ | ✅     | ✅   | ✅  | ✅    | ✅         |
-| 02 - Rock Paper Scissors     | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ❌      | ✅      | ✅  | ✅ | ✅    | ✅  | ✅ | ✅     | ✅   | ✅  | ❌    | ✅         |
-| 03 - Rucksack Reorganization | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ❌      | ✅      | ✅  | ❌ | ✅    | ✅  | ✅ | ✅     | ✅   | ✅  | ❌    | ✅         |
-| 04 - Camp Cleanup            | ✅   | ✅     | ✅     | ✅   | ✅     | ❌         | ✅   | ✅ | ✅      | ✅      | ✅  | ❌ | ❌    | ✅  | ✅ | ✅     | ✅   | ✅  | ❌    | ✅         |
-| 05 - Supply Stacks           | ✅   | ✅     | ✅     | ✅   | ❌     | ❌         | ✅   | ✅ | ✅      | ❌      | ✅  | ❌ | ❌    | ✅  | ❌ | ✅     | ✅   | ❌  | ❌    | ❌         |
-| 06 - Tuning Trouble          | ✅   | ✅     | ✅     | ✅   | ✅     | ❌         | ✅   | ✅ | ❌      | ❌      | ✅  | ❌ | ❌    | ✅  | ❌ | ✅     | ✅   | ✅  | ❌    | ✅         |
-| 07 - No Space Left On Device | ✅   | ✅     | ✅     | ✅   | ❌     | ❌         | ✅   | ✅ | ✅      | ❌      | ✅  | ❌ | ❌    | ❌  | ❌ | ✅     | ✅   | ❌  | ❌    | ❌         |
-| 08 - Treetop Tree House      | ❌   | ✅     | ✅     | ✅   | ❌     | ❌         | ❌   | ✅ | ❌      | ❌      | ✅  | ❌ | ❌    | ❌  | ❌ | ✅     | ✅   | ✅  | ❌    | ❌         |
+| Day/Lang                     | Java | Python | Kotlin | Ruby | Elixir | JavaScript | Perl | C  | Clojure | Haskell | Nim | C# | Scala | C++ | Go | Groovy | Rust | BQN | T-SQL | TypeScript | Bash |
+|------------------------------|------|--------|--------|------|--------|------------|------|----|---------|---------|-----|----|-------|-----|----|--------|------|-----|-------|------------|------|
+| 01 - Calorie Counting        | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ✅      | ✅      | ✅  | ✅ | ✅    | ✅  | ✅ | ✅     | ✅   | ✅  | ✅    | ✅         | ✅   |
+| 02 - Rock Paper Scissors     | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ❌      | ✅      | ✅  | ✅ | ✅    | ✅  | ✅ | ✅     | ✅   | ✅  | ❌    | ✅         | ✅   |
+| 03 - Rucksack Reorganization | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ❌      | ✅      | ✅  | ❌ | ✅    | ✅  | ✅ | ✅     | ✅   | ✅  | ❌    | ✅         | ✅   |
+| 04 - Camp Cleanup            | ✅   | ✅     | ✅     | ✅   | ✅     | ❌         | ✅   | ✅ | ✅      | ✅      | ✅  | ❌ | ❌    | ✅  | ✅ | ✅     | ✅   | ✅  | ❌    | ✅         | ✅   |
+| 05 - Supply Stacks           | ✅   | ✅     | ✅     | ✅   | ✅     | ❌         | ✅   | ✅ | ✅      | ❌      | ✅  | ❌ | ❌    | ✅  | ❌ | ✅     | ✅   | ❌  | ❌    | ❌         | ❌   |
+| 06 - Tuning Trouble          | ✅   | ✅     | ✅     | ✅   | ✅     | ❌         | ✅   | ✅ | ❌      | ❌      | ✅  | ❌ | ❌    | ✅  | ❌ | ✅     | ✅   | ✅  | ❌    | ✅         | ❌   |
+| 07 - No Space Left On Device | ✅   | ✅     | ✅     | ✅   | ❌     | ❌         | ✅   | ✅ | ✅      | ❌      | ✅  | ❌ | ❌    | ❌  | ❌ | ✅     | ✅   | ❌  | ❌    | ❌         | ❌   |
+| 08 - Treetop Tree House      | ❌   | ✅     | ✅     | ✅   | ❌     | ❌         | ✅   | ✅ | ❌      | ❌      | ✅  | ❌ | ❌    | ❌  | ❌ | ✅     | ✅   | ✅  | ❌    | ❌         | ❌   |
+| 09 - Rope Bridge             | ❌   | ✅     | ✅     | ❌   | ❌     | ❌         | ❌   | ✅ | ❌      | ❌      | ✅  | ❌ | ❌    | ❌  | ❌ | ✅     | ❌   | ✅  | ❌    | ❌         | ❌   |
+| 10 - Cathode-Ray Tube        | ❌   | ✅     | ✅     | ✅   | ❌     | ❌         | ❌   | ✅ | ❌      | ❌      | ✅  | ❌ | ❌    | ❌  | ❌ | ❌     | ✅   | ✅  | ❌    | ❌         | ❌   |
 
 
 ❌   = Keine Lösung / No solution,
