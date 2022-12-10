@@ -8,7 +8,7 @@ void draw(int position, int cRegister, int cycle) {
 
 int checkCycle(int sStrength, int cycle, int cRegister) {
     if( ((cycle + 21) % 40) == 0) {sStrength = sStrength + ((cycle+1) * cRegister);}
-        draw((cycle % 40), cRegister, cycle);
+    draw((cycle % 40), cRegister, cycle);
     return sStrength;
 }
 
