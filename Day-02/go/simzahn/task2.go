@@ -12,7 +12,7 @@ func main() {
 	var score = 0
 
 	//setup of the filescanner
-	readfile, err := os.Open("input")
+	readfile, err := os.Open("input.txt")
 	if err != nil {
 		fmt.Println(err)
 	}

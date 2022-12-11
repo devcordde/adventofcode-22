@@ -10,7 +10,7 @@ func main() {
 
 	var sum = 0
 
-	readfile, error := os.Open("input")
+	readfile, error := os.Open("input.txt")
 	if error != nil {
 		fmt.Println(error)
 		return

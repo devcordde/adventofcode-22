@@ -11,7 +11,7 @@ func main() {
 
 	var counter = 0
 
-	readfile, err := os.Open("input")
+	readfile, err := os.Open("input.txt")
 	if err != nil {
 		panic(err)
 	}

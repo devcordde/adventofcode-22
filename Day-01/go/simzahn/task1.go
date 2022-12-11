@@ -11,7 +11,7 @@ func main() {
 
 	var elfes = []int{0}
 
-	readFile, err := os.Open("input")
+	readFile, err := os.Open("input.txt")
 
 	if err != nil {
 		fmt.Println(err)

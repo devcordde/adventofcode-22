@@ -12,7 +12,7 @@ func main() {
 
 	var port = new(Port)
 
-	readfile, err := os.Open("input")
+	readfile, err := os.Open("input.txt")
 	if err != nil {
 		panic(err)
 	}
