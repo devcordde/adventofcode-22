@@ -24,11 +24,11 @@ class Monkey:
         t_false = int(monkey[5][-1])
         return Monkey(id, items, operation, test, t_true, t_false)
 
-    def inspect(self, mod=3) -> list[(int, int)]:
+    def inspect(self, reduce = lambda x: int(x / 3)) -> list[(int, int)]:
         next = []
         for item in self.items:
             new = int(eval(self.operation.replace("old", str(item))))
-            new %= mod
+            new = reduce(new)
             next.append((self.t_true if not new % self.test else self.t_false, new))
             self.inspects += 1
         self.items = []
@@ -54,7 +54,7 @@ for t in monkeys.values():
 
 for _ in range(10000):
     for monkey in monkeys.values():
-        for t, item in monkey.inspect(mod):
+        for t, item in monkey.inspect(lambda x: x % mod):
             monkeys[t].items.append(item)
 
 monkey_list = list(monkeys.values())
