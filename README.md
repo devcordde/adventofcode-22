@@ -10,21 +10,24 @@ Hier ist eine Liste mit allen von Beitragenden verwendeten Programmiersprachen u
 
 Here is a list of all programming languages used by the contributors and the days that were solved with them:
 
-| Day/Lang                     | Java | Python | Kotlin | Ruby | Elixir | JavaScript | Perl | C  | Clojure | Haskell | Nim | C# | Scala | C++ | Go | Groovy | Rust | BQN | T-SQL | TypeScript | Bash |
-|------------------------------|------|--------|--------|------|--------|------------|------|----|---------|---------|-----|----|-------|-----|----|--------|------|-----|-------|------------|------|
-| 01 - Calorie Counting        | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ✅      | ✅      | ✅  | ✅ | ✅    | ✅  | ✅ | ✅     | ✅   | ✅  | ✅    | ✅         | ✅   |
-| 02 - Rock Paper Scissors     | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ❌      | ✅      | ✅  | ✅ | ✅    | ✅  | ✅ | ✅     | ✅   | ✅  | ❌    | ✅         | ✅   |
-| 03 - Rucksack Reorganization | ✅   | ✅     | ✅     | ✅   | ✅     | ✅         | ✅   | ✅ | ❌      | ✅      | ✅  | ❌ | ✅    | ✅  | ✅ | ✅     | ✅   | ✅  | ❌    | ✅         | ✅   |
-| 04 - Camp Cleanup            | ✅   | ✅     | ✅     | ✅   | ✅     | ❌         | ✅   | ✅ | ✅      | ✅      | ✅  | ❌ | ❌    | ✅  | ✅ | ✅     | ✅   | ✅  | ❌    | ✅         | ✅   |
-| 05 - Supply Stacks           | ✅   | ✅     | ✅     | ✅   | ✅     | ❌         | ✅   | ✅ | ✅      | ❌      | ✅  | ❌ | ❌    | ✅  | ✅ | ✅     | ✅   | ❌  | ❌    | ❌         | ✅   |
-| 06 - Tuning Trouble          | ✅   | ✅     | ✅     | ✅   | ✅     | ❌         | ✅   | ✅ | ❌      | ❌      | ✅  | ❌ | ❌    | ✅  | ✅ | ✅     | ✅   | ✅  | ❌    | ✅         | ❌   |
-| 07 - No Space Left On Device | ✅   | ✅     | ✅     | ✅   | ❌     | ❌         | ✅   | ✅ | ✅      | ❌      | ✅  | ❌ | ❌    | ❌  | ✅ | ✅     | ✅   | ❌  | ❌    | ❌         | ❌   |
-| 08 - Treetop Tree House      | ❌   | ✅     | ✅     | ✅   | ❌     | ❌         | ✅   | ✅ | ❌      | ❌      | ✅  | ❌ | ❌    | ❌  | ❌ | ✅     | ✅   | ✅  | ❌    | ❌         | ❌   |
-| 09 - Rope Bridge             | ❌   | ✅     | ✅     | ❌   | ❌     | ❌         | ❌   | ✅ | ❌      | ❌      | ✅  | ❌ | ❌    | ❌  | ❌ | ✅     | ❌   | ✅  | ❌    | ❌         | ❌   |
-| 10 - Cathode-Ray Tube        | ❌   | ✅     | ✅     | ✅   | ❌     | ❌         | ❌   | ✅ | ❌      | ❌      | ✅  | ❌ | ❌    | ❌  | ❌ | ❌     | ✅   | ✅  | ❌    | ❌         | ❌   |
-| 11 - Monkey in the Middle    | ❌   | ✅     | ✅     | ❌   | ❌     | ❌         | ❌   | ✅ | ✅      | ❌      | ❌  | ❌ | ❌    | ❌  | ❌ | ❌     | ❌   | ❌  | ❌    | ❌         | ❌   |
-| 12 - Hill Climbing Algorithm | ❌   | ✅     | ❌     | ❌   | ❌     | ❌         | ❌   | ✅ | ❌      | ❌      | ❌  | ❌ | ❌    | ❌  | ❌ | ❌     | ❌   | ❌  | ❌    | ❌         | ❌   |
+| Day/Lang                     | C   | Python | Kotlin | Nim | Groovy | Ruby | Rust | BQN | Perl | Go  | Java | Elixir | C++ | Clojure | TypeScript | Bash | Haskell | JavaScript | Scala | C#  | T-SQL |
+|------------------------------|-----|--------|--------|-----|--------|------|------|-----|------|-----|------|--------|-----|---------|------------|------|---------|------------|-------|-----|-------|
+| Solved Days                  | 12  | 12     | 11     | 10  | 9      | 9    | 9    | 8   | 8    | 7   | 7    | 6      | 6   | 5       | 5          | 5    | 4       | 3          | 3     | 2   | 1     |
+| 01 - Calorie Counting        | ✅  | ✅     | ✅     | ✅  | ✅     | ✅   | ✅   | ✅  | ✅   | ✅  | ✅   | ✅     | ✅  | ✅      | ✅         | ✅   | ✅      | ✅         | ✅    | ✅  | ✅    |
+| 02 - Rock Paper Scissors     | ✅  | ✅     | ✅     | ✅  | ✅     | ✅   | ✅   | ✅  | ✅   | ✅  | ✅   | ✅     | ✅  | ❌      | ✅         | ✅   | ✅      | ✅         | ✅    | ✅  | ❌    |
+| 03 - Rucksack Reorganization | ✅  | ✅     | ✅     | ✅  | ✅     | ✅   | ✅   | ✅  | ✅   | ✅  | ✅   | ✅     | ✅  | ❌      | ✅         | ✅   | ✅      | ✅         | ✅    | ❌  | ❌    |
+| 04 - Camp Cleanup            | ✅  | ✅     | ✅     | ✅  | ✅     | ✅   | ✅   | ✅  | ✅   | ✅  | ✅   | ✅     | ✅  | ✅      | ✅         | ✅   | ✅      | ❌         | ❌    | ❌  | ❌    |
+| 05 - Supply Stacks           | ✅  | ✅     | ✅     | ✅  | ✅     | ✅   | ✅   | ❌  | ✅   | ✅  | ✅   | ✅     | ✅  | ✅      | ❌         | ✅   | ❌      | ❌         | ❌    | ❌  | ❌    |
+| 06 - Tuning Trouble          | ✅  | ✅     | ✅     | ✅  | ✅     | ✅   | ✅   | ✅  | ✅   | ✅  | ✅   | ✅     | ✅  | ❌      | ✅         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    |
+| 07 - No Space Left On Device | ✅  | ✅     | ✅     | ✅  | ✅     | ✅   | ✅   | ❌  | ✅   | ✅  | ✅   | ❌     | ❌  | ✅      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    |
+| 08 - Treetop Tree House      | ✅  | ✅     | ✅     | ✅  | ✅     | ✅   | ✅   | ✅  | ✅   | ❌  | ❌   | ❌     | ❌  | ❌      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    |
+| 09 - Rope Bridge             | ✅  | ✅     | ✅     | ✅  | ✅     | ❌   | ❌   | ✅  | ❌   | ❌  | ❌   | ❌     | ❌  | ❌      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    |
+| 10 - Cathode-Ray Tube        | ✅  | ✅     | ✅     | ✅  | ❌     | ✅   | ✅   | ✅  | ❌   | ❌  | ❌   | ❌     | ❌  | ❌      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    |
+| 11 - Monkey in the Middle    | ✅  | ✅     | ✅     | ❌  | ❌     | ❌   | ❌   | ❌  | ❌   | ❌  | ❌   | ❌     | ❌  | ✅      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    |
+| 12 - Hill Climbing Algorithm | ✅  | ✅     | ❌     | ❌  | ❌     | ❌   | ❌   | ❌  | ❌   | ❌  | ❌   | ❌     | ❌  | ❌      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    |
+| 13 - Distress Signal         | ❌  | ❌     | ❌     | ❌  | ❌     | ❌   | ❌   | ❌  | ❌   | ❌  | ❌   | ❌     | ❌  | ❌      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    |
 
+<!-- | XX - Day | ❌  | ❌     | ❌     | ❌  | ❌     | ❌   | ❌   | ❌  | ❌   | ❌   | ❌   | ❌     | ❌  | ❌      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    | -->
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
