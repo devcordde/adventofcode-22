@@ -10,20 +10,20 @@ def equal(pair: list[list]):
 
 def compare(left: list | int, right: list | int) -> int:
     if type(left) == int and type(right) == int:
-        if left == right: # on equal continue
+        if left == right:  # on equal continue
             return 0
-        return 1 if left < right else -1 # lower integer first
+        return 1 if left < right else -1  # lower integer first
     if type(left) == list and type(right) == list:
         for i, e in enumerate(left):
-            if len(right) - 1 < i: # right list ran out of items first
+            if len(right) - 1 < i:  # right list ran out of items first
                 return -1
-            res = compare(e, right[i]) # compare value of list
+            res = compare(e, right[i])  # compare value of list
             if res == 0:
                 continue
             return res
-        if len(left) == len(right): # same length and no decision results in next element
+        if len(left) == len(right):  # same length and no decision results in next element
             return 0
-        return 1 # left list ran out of items first
+        return 1  # left list ran out of items first
     return compare(left if type(left) == list else [left], right if type(right) == list else [right])
 
 
