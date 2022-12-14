@@ -4,29 +4,29 @@ type File = object
   name: string
   size: int
 
-type FileTreeNode = object
+type FileTreeNode = ref object
   name: string
   files: seq[File]
-  children: seq[ref FileTreeNode]
-  parent: ref FileTreeNode
+  children: seq[FileTreeNode]
+  parent: FileTreeNode
 
-proc newNode(name: string): ref FileTreeNode=
+proc newNode(name: string): FileTreeNode=
   var node = new(FileTreeNode)
   node.name= name
   node.files= @[]
   node.children= @[]
   return node
 
-proc addChild(node: var ref FileTreeNode, name: string):ref FileTreeNode =
+proc addChild(node: var FileTreeNode, name: string): FileTreeNode =
   var n = newNode(name)
   n.parent = node
   node.children.add(n)
   return n
 
-proc addFile(node: var ref FileTreeNode, file: File)=
+proc addFile(node: var FileTreeNode, file: File)=
   node.files.add(file)
 
-proc totalSize(node: ref FileTreeNode):int=
+proc totalSize(node: FileTreeNode):int=
   var sum = 0
   for f in node.files:
     sum+=f.size
@@ -34,7 +34,7 @@ proc totalSize(node: ref FileTreeNode):int=
     sum+=totalSize(n)
   return sum
 
-proc printFileTree(root: ref FileTreeNode, depth: int = 0): void=
+proc printFileTree(root: FileTreeNode, depth: int = 0): void=
   echo " ".repeat(depth),"-", root.name
   for f in root.files:
     echo " ".repeat(depth+1), f
@@ -42,7 +42,7 @@ proc printFileTree(root: ref FileTreeNode, depth: int = 0): void=
     printFileTree(n, depth+4)
 
 var root = newNode("root")
-var currentNode: ref FileTreeNode
+var currentNode: FileTreeNode
 
 if os.paramCount()<1:
   echo "No input file specified"
