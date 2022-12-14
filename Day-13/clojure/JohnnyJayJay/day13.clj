@@ -46,5 +46,5 @@
 
 (defn -main [file & _]
   (let [packets (-> file slurp parse-input)]
-    (println "Part 1:" (part-one packets))
-    (println "Part 2:" (part-two packets))))
+    (println "Part 1:" (right-order-sum packets))
+    (println "Part 2:" (decoder-key packets))))
