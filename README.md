@@ -12,7 +12,7 @@ Here is a list of all programming languages used by the contributors and the day
 
 | Day/Lang                     | Java | Python | Rust | Groovy | C   | Kotlin | Nim | Ruby | Go  | BQN | Perl | Elixir | C++ | Clojure | TypeScript | Bash | Haskell | JavaScript | Scala | C#  | T-SQL |
 |------------------------------|------|--------|------|--------|-----|--------|-----|------|-----|-----|------|--------|-----|---------|------------|------|---------|------------|-------|-----|-------|
-| Solved Days                  | 14   | 14     | 14   | 14     | 13  | 11     | 10  | 9    | 9   | 8   | 8    | 6      | 6   | 5       | 5          | 5    | 4       | 3          | 3     | 2   | 1     |
+| Solved Days                  | 15   | 15     | 14   | 14     | 13  | 11     | 10  | 9    | 9   | 8   | 8    | 6      | 6   | 5       | 5          | 5    | 4       | 3          | 3     | 2   | 1     |
 | 01 - Calorie Counting        | ✅   | ✅     | ✅   | ✅     | ✅  | ✅     | ✅  | ✅   | ✅  | ✅  | ✅   | ✅     | ✅  | ✅      | ✅         | ✅   | ✅      | ✅         | ✅    | ✅  | ✅    |
 | 02 - Rock Paper Scissors     | ✅   | ✅     | ✅   | ✅     | ✅  | ✅     | ✅  | ✅   | ✅  | ✅  | ✅   | ✅     | ✅  | ❌      | ✅         | ✅   | ✅      | ✅         | ✅    | ✅  | ❌    |
 | 03 - Rucksack Reorganization | ✅   | ✅     | ✅   | ✅     | ✅  | ✅     | ✅  | ✅   | ✅  | ✅  | ✅   | ✅     | ✅  | ❌      | ✅         | ✅   | ✅      | ✅         | ✅    | ❌  | ❌    |
@@ -27,6 +27,7 @@ Here is a list of all programming languages used by the contributors and the day
 | 12 - Hill Climbing Algorithm | ✅   | ✅     | ✅   | ✅     | ✅  | ❌     | ❌  | ❌   | ❌  | ❌  | ❌   | ❌     | ❌  | ❌      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    |
 | 13 - Distress Signal         | ✅   | ✅     | ✅   | ✅     | ❌  | ❌     | ❌  | ❌   | ❌  | ❌  | ❌   | ❌     | ❌  | ❌      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    |
 | 14 - Regolith Reservoir      | ✅   | ✅     | ✅   | ✅     | ✅  | ❌     | ❌  | ❌   | ❌  | ❌  | ❌   | ❌     | ❌  | ❌      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    |
+| 15 - Beacon Exclusion Zone   | ✅   | ✅     | ❌   | ❌     | ❌  | ❌     | ❌  | ❌   | ❌  | ❌  | ❌   | ❌     | ❌  | ❌      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    | -->
 
 <!-- | XX - Day | ❌  | ❌     | ❌     | ❌  | ❌     | ❌   | ❌   | ❌  | ❌   | ❌   | ❌   | ❌     | ❌  | ❌      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    | -->
 
