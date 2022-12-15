@@ -57,7 +57,7 @@ fn main() {
 
     let mut not_covered_position: Option<Position> = None;
 
-    for sensor in &input {
+    'outer: for sensor in &input {
         let min = sensor.position.y - sensor.distance - 1;
         let max = sensor.position.y + sensor.distance + 1;
         for y in min..=max {
@@ -81,6 +81,7 @@ fn main() {
                     continue;
                 }
                 not_covered_position = Some(min_position.clone());
+                break 'outer;
             }
             if !(&input).into_iter().any(|sensor| {
                 max_position.is_in_reach(&sensor.position, &sensor.distance)
@@ -90,6 +91,7 @@ fn main() {
                     continue;
                 }
                 not_covered_position = Some(max_position.clone());
+                break 'outer;
             }
         }
     }
