@@ -17,7 +17,7 @@ Here is a list of all programming languages used by the contributors and the day
 | 02 - Rock Paper Scissors     | ✅    | ✅      | ✅      | ✅    | ✅   | ✅     | ✅  | ✅   | ✅  | ✅  | ✅   | ✅     | ✅  | ❌      | ✅         | ✅   | ✅      | ✅         | ✅    | ✅  | ❌    |
 | 03 - Rucksack Reorganization | ✅    | ✅      | ✅      | ✅    | ✅   | ✅     | ✅  | ✅   | ✅  | ✅  | ✅   | ✅     | ✅  | ❌      | ✅         | ✅   | ✅      | ✅         | ✅    | ❌  | ❌    |
 | 04 - Camp Cleanup            | ✅    | ✅      | ✅      | ✅    | ✅   | ✅     | ✅  | ✅   | ✅  | ✅  | ✅   | ✅     | ✅  | ✅      | ✅         | ✅   | ✅      | ❌         | ❌    | ❌  | ❌    |
-| 05 - Supply Stacks           | ✅    | ✅      | ✅      | ✅    | ✅   | ✅     | ✅  | ✅   | ✅  | ❌  | ✅   | ✅     | ✅  | ✅      | ❌         | ✅   | ❌      | ❌         | ❌    | ❌  | ❌    |
+| 05 - Supply Stacks           | ✅    | ✅      | ✅      | ✅    | ✅   | ✅     | ✅  | ✅   | ✅  | ✅  | ✅   | ✅     | ✅  | ✅      | ❌         | ✅   | ❌      | ❌         | ❌    | ❌  | ❌    |
 | 06 - Tuning Trouble          | ✅    | ✅      | ✅      | ✅    | ✅   | ✅     | ✅  | ✅   | ✅  | ✅  | ✅   | ✅     | ✅  | ❌      | ✅         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    |
 | 07 - No Space Left On Device | ✅    | ✅      | ✅      | ✅    | ✅   | ✅     | ✅  | ✅   | ✅  | ❌  | ✅   | ❌     | ❌  | ✅      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    |
 | 08 - Treetop Tree House      | ✅    | ✅      | ✅      | ✅    | ✅   | ✅     | ✅  | ✅   | ❌  | ✅  | ✅   | ❌     | ❌  | ❌      | ❌         | ❌   | ❌      | ❌         | ❌    | ❌  | ❌    |
